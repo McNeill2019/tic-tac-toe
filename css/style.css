@@ -61,19 +61,20 @@ padding: 5px;
 #mainContainer {
 border: 10px solid white;
 height: 70.9vh;
-width: 47.7vw;
+width: 49vw;
 margin: 0 auto;
 border: 8px solid #1E90FF;
 border-radius: 30px;
 box-shadow: 3px 3px 5px 6px #949494;
+background-color: lime;
 }
 
 .innerContainer1, .innerContainer2, .innerContainer3 {
 
 background-color: lime;
 height: 23vh;
-width: 46.5vw;
-border-radius: 10px;
+width: 47.5vw;
+border-radius: 15px;
 }
 
 .topLine1, .topLine2 , .topLine3 , .midLine1 , .midLine2 , .midLine2, .midLine3, .bottomLine1 , .bottomLine2 , .bottomLine3 {
@@ -82,10 +83,10 @@ background-color: #1E90FF;
 display: inline-block;
 border: 7px solid white;
 height: 22vh;
-width: 15vw;
+width: 15.3vw;
 margin-left: 0.3vw;
 margin-top: 0.3vh;
-border-radius: 10px;
+border-radius: 15px;
 }
 
 
