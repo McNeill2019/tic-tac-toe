@@ -105,6 +105,12 @@ p {
 
 }
 
+#winnerPrompt {
+  font-size: 25px;
+  line-height: 2;
+  color: blue;  
+}
+
 .topLine1:hover {
  opacity: 0.5;
 }

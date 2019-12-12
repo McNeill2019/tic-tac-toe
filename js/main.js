@@ -14,9 +14,14 @@ var $box9 = $(".bottomLine3");
 var $playerPrompt = $("span");
 var $par = $("<p></p>");
 $par.css("font-size", "40px");
-$par.css("margin", "auto");
+$par.css("margin", "1px, 0px, 1px, 0px");
 $par.css("color", "blue");
-
+$par.css("background-color", "white");
+$par.css("border-radius", "50px");
+$par.css("border", "8px solid #1E90FF");
+$par.css("padding", "5px");
+$par.css("box-shadow", "3px 3px 5px 6px #949494");
+$("#playerOneScore").html("0");  $("#playerTwoScore").html("0");
 // var enterXorO = function() {
 // console.log (`the box that was clicked was ${this}`)
 // },
@@ -76,6 +81,16 @@ $("button").on('click', function() {
 
 $("button").on('click', function() {
  $par.html("");
+});
+
+$("button").on('click', function() {
+ $par.css("border", "none");
+ $par.css("background-color", "transparent");
+ $par.css("box-shadow", "none");
+});
+
+$("button").on('click', function() {
+$playerPrompt.html("Player One");
 });
 //end of reset
 
@@ -148,13 +163,22 @@ for (var i = 0; i < winningCombinations.length; i++) {
 
 
   if (innerArr.join("") === "XXX") {
+    $par.css("background-color", "white");
+    $par.css("border-radius", "50px");
+    $par.css("border", "8px solid #1E90FF");
+    $par.css("padding", "5px");
     $par.html("Player one wins!!!");
     $(".winnerAlert").append($par);
     player1Score += 1;
     $("#playerOneScore").html(player1Score);
 
 
+
   } else if (innerArr.join("") === "000") {
+    $par.css("background-color", "white");
+    $par.css("border-radius", "50px");
+    $par.css("border", "8px solid #1E90FF");
+    $par.css("padding", "5px");
     $par.html("Player two wins!!!");
     $(".winnerAlert").append($par);
     player2Score += 1;
@@ -167,6 +191,10 @@ for (var i = 0; i < winningCombinations.length; i++) {
   } else {
     // The game is a draw
     console.log('The game is a draw');
+    $par.css("background-color", "white");
+    $par.css("border-radius", "50px");
+    $par.css("border", "8px solid #1E90FF");
+    $par.css("padding", "5px");
     $par.html("Its a draw!!!");
     $(".winnerAlert").append($par);
     return;
