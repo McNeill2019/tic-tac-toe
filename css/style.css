@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+}
+/* #fffd01; */
+
+body {
+background: url("../images/background.jpg");
+font-family: 'Fredoka One', cursive;
+/* background-color: red; */
+color: blue;
+width: 80vw;
+margin: 0 auto;
+height: 180vh;
+}
+
+.image {
+width: 35vw;
+height:20vh;
+}
+
+.innerHeader1 {
+width: 35vw;
+height: 19vh;
+margin: 4vh auto;
+}
+
+header {
+margin: 0;
+}
+
+.instructionsContainer{
+background-color: white;
+color: blue;
+border: 10px solid white;
+line-height: 1.5;
+margin: 0 auto;
+border: 8px solid #1E90FF;
+width: 50vw;
+border-radius: 50px;
+box-shadow: 3px 3px 5px 6px #949494;
+}
+
+li {
+text-align: left;
+font-size: 25px;
+padding: 5px;
+}
+/* ********* */
+.players {
+  height: 8vh;
+  background-color: white;
+  width: 30vw;
+  margin: 5vh auto;
+  border: 8px solid #1E90FF;
+  border-radius: 50px;
+  box-shadow: 3px 3px 5px 6px #949494;
+}
+/* ********** */
+
+
+#mainContainer {
+border: 10px solid white;
+height: 70.9vh;
+width: 47.7vw;
+margin: 0 auto;
+border: 8px solid #1E90FF;
+border-radius: 30px;
+box-shadow: 3px 3px 5px 6px #949494;
+}
+
+.innerContainer1, .innerContainer2, .innerContainer3 {
+
+background-color: lime;
+height: 23vh;
+width: 46.5vw;
+border-radius: 10px;
+}
+
+.topLine1, .topLine2 , .topLine3 , .midLine1 , .midLine2 , .midLine2, .midLine3, .bottomLine1 , .bottomLine2 , .bottomLine3 {
+
+background-color: #1E90FF;
+display: inline-block;
+border: 7px solid white;
+height: 22vh;
+width: 15vw;
+margin-left: 0.3vw;
+margin-top: 0.3vh;
+border-radius: 10px;
+}
+
+
+p {
+  text-align: center;
+  display: table;
+  font-size: 60px;
+  margin: 6vh auto;
+  color: white;
+}
+
+#winner {
+  font-size: 25px;
+  margin: auto;
+  line-height: 2;
+  color: blue;
+
+}
+
+.topLine1:hover {
+ opacity: 0.5;
+}
+
+.topLine2:hover {
+ opacity: 0.5;
+}
+
+.topLine3:hover {
+ opacity: 0.5;
+}
+
+.midLine1:hover {
+  opacity: 0.5;
+}
+
+.midLine2:hover {
+  opacity: 0.5;
+}
+
+.midLine3:hover {
+  opacity: 0.5;
+}
+
+.bottomLine1:hover {
+  opacity: 0.5;
+}
+
+.bottomLine2:hover {
+  opacity: 0.5;
+}
+
+.bottomLine3:hover {
+  opacity: 0.5;
+}
+
+h2 {
+ margin: 0;
+}
+
+div h1, div h2 {
+  padding: 1vh;
+  text-align: center;
+}
+
+div h1 {
+  font-size: 50px;
+}
+
+div h2 {
+  font-size: 35px;
+}
+
+.cat {
+  margin: 2vh auto;
+  display: flex;
+  justify-content: space-between;
+  width: 47.3vw;
+}
+
+.playerScore {
+}
+
+.playerScoreBox {
+border: 8px solid #1E90FF;
+width: 19vh;
+height: 12vh;
+background: white;
+color: #1E90FF;
+margin: 1vh auto;
+border-radius: 60px;
+box-shadow: 3px 3px 5px 6px #949494;
+}
+
+#playerOneScore, #playerTwoScore {
+  color: blue;
+  text-align: center;
+  margin: 0 auto;
+}
+
+button {
+  display: block;
+  width: 25vw;
+  height: 6vh;
+  margin: 2vh auto;
+  font-family: 'Fredoka One', cursive;
+  color: blue;
+  background-color: white;
+  border-radius: 120px;
+  font-size: 20px;
+  border: 8px solid #1E90FF;
+  box-shadow: 3px 3px 5px 6px #949494;
+}
