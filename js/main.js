@@ -43,14 +43,14 @@ $('.box').on('click', function() {
       var $p = $("<p></p>");
       $p.html("X");
       $(this).append($p);
-      $playerPrompt.html("Player One");
+      $playerPrompt.html("Player Two");
       winningCombos()
 
     } else {
       var $p = $("<p></p>");
       $p.html("0");
       $(this).append($p);
-      $playerPrompt.html("Player Two");
+      $playerPrompt.html("Player One");
       winningCombos()
       // player is O do something
     }
