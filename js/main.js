@@ -30,7 +30,7 @@ $('.box').on('click', function() {
 
   // if the square has already been clicked do nothing
 
-  let cellContents = $(this)[0].innerHTML
+  let cellContents = $(this)[0].innerHTML;
 
   // if the cellContents variable is not false
   // if the cell is empty then run this:
@@ -43,19 +43,19 @@ $('.box').on('click', function() {
       var $p = $("<p></p>");
       $p.html("X");
       $(this).append($p);
-      $playerPrompt.html("Player One");
+      $playerPrompt.html("Player Two");
       winningCombos()
 
     } else {
       var $p = $("<p></p>");
       $p.html("0");
       $(this).append($p);
-      $playerPrompt.html("Player Two");
+      $playerPrompt.html("Player One");
       winningCombos()
       // player is O do something
     }
     // change the player
-    player = ! player
+    player = ! player;
 
   }// end of ! cell if statement
 
