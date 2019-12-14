@@ -24,15 +24,11 @@ $("#playerOneScore").html("0");  $("#playerTwoScore").html("0");
 
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-// global player turn variable
 let player = true;
 
 $('.box').on('click', function() {
-  // const box = $(this)[0]
-  // // console.log('.box');
-  // console.log(box.id);
 
-  // if the square is clicked do nothing
+  // if the square has already been clicked do nothing
 
   let cellContents = $(this)[0].innerHTML
 
@@ -41,8 +37,6 @@ $('.box').on('click', function() {
   if ( ! cellContents ) {
 
     console.log('running code');
-
-    // console.log('There is something in here');
 
     if ( player ) {
       // update the current box with player x symbol.
@@ -68,19 +62,18 @@ $('.box').on('click', function() {
 
 }); // end of on click function
 
+//reset settings:
+
 $("button").on('click', function() {
   $(".box").html("");
 });
 
 $("button").on('click', function() {
  $par.html("");
-});
-
-$("button").on('click', function() {
  $par.css("border", "none");
  $par.css("background-color", "transparent");
  $par.css("box-shadow", "none");
- player = true;
+ player = true; // re-setting to true so always starts with player one.
  console.log("player", player);
 
 });
@@ -117,18 +110,12 @@ const winningCombos = function() {
 
 const drawSquares = [$box1.text(), $box2.text() , $box3.text(), $box4.text(), $box5.text() , $box6.text(), $box7.text(), $box8.text() , $box9.text()];
 
-// console.log(drawSquares);
-// console.log(drawSquares.includes(''));
 
 for (var i = 0; i < winningCombinations.length; i++) {
   var innerArr = winningCombinations[i];
 
-  // console.log( 'innerarray', innerArr );
-
-
   if (innerArr.join("") === "XXX") {
     console.log('WINNER FOR XXX');
-    // console.log('grab the winners', innerArr);
 
       $par.css("background-color", "white");
       $par.css("border-radius", "50px");
@@ -165,51 +152,6 @@ for (var i = 0; i < winningCombinations.length; i++) {
       $par.html("Its a draw!!!");
       $(".winnerAlert").append($par);
       return;
+    }
   }
-}
 };
-
-//Another method of checking for a winner
-// const winningCombinations = function() {
-//
-//   const $combo1  = $box1.text() + $box2.text() + $box3.text();
-//   const $combo2 = $box4.text() + $box5.text() + $box6.text();
-//   const $combo3 = $box7.text() + $box8.text() + $box9.text();
-//   const $combo4 = $box1.text() + $box4.text() + $box7.text();
-//   const $combo5 = $box2.text() + $box5.text() + $box8.text()
-//   const $combo6 = $box3.text() + $box6.text() + $box9.text()
-//   const $combo7 = $box1.text() + $box5.text() + $box9.text()
-//   const $combo8 = $box3.text() + $box5.text() + $box7.text()
-//
-
-//  if ($combo1 === "XXX" || $combo1 === "000") {
-//    console.log("You win");
-//  } else if ( $combo2 === "XXX" || $combo2 === "000") {
-//    console.log("You win");
-//  } else if ( $combo3 === "XXX" || $combo3 === "000") {
-//    console.log("You win");
-//  } else if ( $combo4 === "XXX" || $combo4 === "000") {
-//    console.log("you win");
-//  } else if ($combo5 === "XXX" || $combo5 === "000") {
-//    console.log("you win");
-//  } else if ($combo6 === "XXX" || $combo6 === "000") {
-//   console.log("you win");
-// } else if ($combo7 === "XXX" || $combo7 === "000") {
-//   console.log("you win");
-// } else if ($combo8 === "XXX" || $combo8 === "000") {
-//   console.log ("you win");
-// } else {
-//   return;
-// }
-// };
-
-// var enterXorO = function() {
-// console.log (`the box that was clicked was ${this}`)
-// },
-
-// 1) Tell me what box i clicked on
-// $('.box').on('click', function() {
-//   const box = $(this)[0]
-//   // console.log('.box');
-//   console.log(box.id);
-// })
