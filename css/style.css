@@ -7,15 +7,19 @@
 body {
 background: url("../images/background.jpg");
 font-family: 'Fredoka One', cursive;
-/* background-color: red; */
 color: blue;
-width: 80vw;
-margin: 0 auto;
-height: 180vh;
+height: 120vh;
+}
+
+.mastercontainer{
+ display: flex;
+ flex-direction: row;
 }
 
 .image {
-width: 35vw;
+display: block;
+margin: 0 auto;
+width: 25vw;
 height:20vh;
 }
 
@@ -32,25 +36,25 @@ margin: 0;
 .instructionsContainer{
 background-color: white;
 color: blue;
-border: 10px solid white;
 line-height: 1.5;
-margin: 0 auto;
 border: 8px solid #1E90FF;
-width: 50vw;
-border-radius: 50px;
+border-radius:30px;
 box-shadow: 3px 3px 5px 6px #949494;
+height: 530px;
+margin-left: 20px;
+flex: 25%;
 }
 
 li {
 text-align: left;
-font-size: 25px;
-padding: 5px;
+font-size: 1vw;
+padding: 10px;
 }
 /* ********* */
 .players {
   height: 8vh;
   background-color: white;
-  width: 30vw;
+  width: 21vw;
   margin: 5vh auto;
   border: 8px solid #1E90FF;
   border-radius: 50px;
@@ -61,50 +65,55 @@ padding: 5px;
 
 #mainContainer {
 border: 10px solid white;
-height: 70.9vh;
-width: 49vw;
-margin: 0 auto;
-border: 8px solid #1E90FF;
+display: flex;
+flex-direction: column;
+flex: 50%;
+height: 530px;
 border-radius: 30px;
 box-shadow: 3px 3px 5px 6px #949494;
 background-color: lime;
+margin: 0 30px;
 }
 
 .innerContainer1, .innerContainer2, .innerContainer3 {
-
+flex: 100%;
+height: 170px;
+display: flex;
+flex-direction: row;
 background-color: lime;
-height: 23vh;
-width: 47.5vw;
 border-radius: 15px;
 }
 
 .topLine1, .topLine2 , .topLine3 , .midLine1 , .midLine2 , .midLine2, .midLine3, .bottomLine1 , .bottomLine2 , .bottomLine3 {
-
 background-color: #1E90FF;
-display: inline-block;
 border: 7px solid white;
-height: 22vh;
-width: 15.3vw;
-margin-left: 0.3vw;
-margin-top: 0.3vh;
 border-radius: 15px;
+height: 165px;
+width: 220px;
+margin: 3px;
 }
 
 
 p {
   text-align: center;
   display: table;
-  font-size: 60px;
+  font-size: 2vw;
   margin: 6vh auto;
   color: white;
 }
 
+#playerOneScore, #playerTwoScore {
+  font-size: 2vw;
+  margin: 5px auto;
+  line-height: 2;
+  color: blue;
+}
+
 #winner {
-  font-size: 25px;
+  font-size: 1.5vw;
   margin: auto;
   line-height: 2;
   color: blue;
-
 }
 
 .topLine1:hover {
@@ -143,28 +152,21 @@ p {
   opacity: 0.5;
 }
 
-h2 {
- margin: 0;
-}
-
-div h1, div h2 {
+h1 {
   padding: 1vh;
   text-align: center;
+  font-size: 2vw;
+  margin: 0;
 }
 
-div h1 {
-  font-size: 50px;
-}
-
-div h2 {
-  font-size: 35px;
-}
-
-.cat {
-  margin: 2vh auto;
+.scorecontainer {
   display: flex;
-  justify-content: space-between;
-  width: 47.3vw;
+  flex-direction: column;
+  flex: 25%;
+}
+
+.playerscoremiddle {
+ flex-basis: 100px;
 }
 
 .playerScore {
@@ -172,8 +174,8 @@ div h2 {
 
 .playerScoreBox {
 border: 8px solid #1E90FF;
-width: 19vh;
-height: 12vh;
+width: 150px;
+height: 80px;
 background: white;
 color: #1E90FF;
 margin: 1vh auto;
@@ -181,22 +183,16 @@ border-radius: 60px;
 box-shadow: 3px 3px 5px 6px #949494;
 }
 
-#playerOneScore, #playerTwoScore {
-  color: blue;
-  text-align: center;
-  margin: 0 auto;
-}
-
 button {
   display: block;
-  width: 25vw;
+  width: 10vw;
   height: 6vh;
   margin: 2vh auto;
   font-family: 'Fredoka One', cursive;
   color: blue;
   background-color: white;
   border-radius: 120px;
-  font-size: 20px;
+  font-size: 1.3vw;
   border: 8px solid #1E90FF;
   box-shadow: 3px 3px 5px 6px #949494;
 }

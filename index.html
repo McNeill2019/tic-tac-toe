@@ -15,15 +15,17 @@
   <body>
 <div id="wallpaper">
 
-  <header>
 
-      <div class="innerHeader1">
+<img class="image" src="images/kisspng-logo-tic-tac-ultimate-tic-tac-toe-font-game-logo-5ac438cc956539.2794858415228090366119 (4).png" alt="Tic Tac Toe Logo">
 
-      <img class="image" src="images/kisspng-logo-tic-tac-ultimate-tic-tac-toe-font-game-logo-5ac438cc956539.2794858415228090366119 (4).png" alt="Tic Tac Toe Logo">
+<div class="players">
 
-      </div>
+  <p class="playersTurn1" id="winner" >Players Turn: <span>Player One</span></p>
+
+</div>
 
 
+<div class = "mastercontainer">
 
 <div class="instructionsContainer">
 
@@ -35,14 +37,6 @@
       <li>If all squares are filled and neither player has made a complete row of Xs or Os, then the game is a draw!</li>
     </ol>
 </div>
-
-<div class="players">
-
-  <p class="playersTurn1" id="winner" >Players Turn: <span>Player One</span></p>
-
-</div>
-
-</header>
 
 <div id="mainContainer">
 
@@ -78,17 +72,11 @@
 
 </div>
 
-<div>
-
-    <p class="winnerAlert "id="winner"></p>
-
-</div>
-
-<div class="cat">
+<div class="scorecontainer">
 
   <div class="playerScore">
 
-    <h2>Player One Score</h2>
+    <h1>Player One Score</h1>
 
     <div class="playerScoreBox">
 
@@ -98,9 +86,11 @@
 
   </div>
 
+  <div class="playerscoremiddle"></div>
+
   <div class="playerScore">
 
-    <h2>Player Two Score</h2>
+    <h1>Player Two Score</h1>
 
     <div class="playerScoreBox">
 
@@ -110,13 +100,26 @@
 
   </div>
 
+  <div>
+
+      <p class="winnerAlert "id="winner"></p>
+
+  </div>
+
+  <div id="winner">
+
+    <button type="button">Reset Game</button>
+
+  </div>
+
 </div>
 
-<div id="winner">
-
-  <button type="button">Reset Game</button>
-
 </div>
+
+
+
+
+
 
 <script src="js/jquery.js"></script>
 <script src="js/main.js"></script>

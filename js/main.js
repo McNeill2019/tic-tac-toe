@@ -12,7 +12,7 @@ var $box9 = $(".bottomLine3");
 
 var $playerPrompt = $("span");
 var $par = $("<p></p>");
-$par.css("font-size", "40px");
+$par.css("font-size", "2vw");
 $par.css("margin", "1px, 0px, 1px, 0px");
 $par.css("color", "blue");
 $par.css("background-color", "white");
@@ -41,6 +41,8 @@ $('.box').on('click', function() {
     if ( player ) {
       // update the current box with player x symbol.
       var $p = $("<p></p>");
+      $p.css("font-size", "3vw");
+      $p.css("vertical-align", "center");
       $p.html("X");
       $(this).append($p);
       $playerPrompt.html("Player Two");
@@ -48,7 +50,10 @@ $('.box').on('click', function() {
 
     } else {
       var $p = $("<p></p>");
+      $p.css("font-size", "3vw");
+      $p.css("vertical-align", "center");
       $p.html("0");
+      $p.css("font-size", "3vw")
       $(this).append($p);
       $playerPrompt.html("Player One");
       winningCombos()
@@ -70,9 +75,9 @@ $("button").on('click', function() {
 
 $("button").on('click', function() {
  $par.html("");
- $par.css("border", "none");
- $par.css("background-color", "transparent");
- $par.css("box-shadow", "none");
+ $par.css("display", "none");
+ // $par.css("background-color", "transparent");
+ // $par.css("box-shadow", "none");
  player = true; // re-setting to true so always starts with player one.
  console.log("player", player);
 
@@ -116,7 +121,7 @@ for (var i = 0; i < winningCombinations.length; i++) {
 
   if (innerArr.join("") === "XXX") {
     console.log('WINNER FOR XXX');
-
+      $par.css("display", "block");
       $par.css("background-color", "white");
       $par.css("border-radius", "50px");
       $par.css("border", "8px solid #1E90FF");
@@ -129,6 +134,7 @@ for (var i = 0; i < winningCombinations.length; i++) {
   } else if (innerArr.join("") === "000") {
 
       console.log('WINNER FOR 000');
+      $par.css("display", "block");
       $par.css("background-color", "white");
       $par.css("border-radius", "50px");
       $par.css("border", "8px solid #1E90FF");
@@ -145,6 +151,7 @@ for (var i = 0; i < winningCombinations.length; i++) {
   } else {
       // The game is a draw
       console.log('The game is a draw');
+      $par.css("display", "block");
       $par.css("background-color", "white");
       $par.css("border-radius", "50px");
       $par.css("border", "8px solid #1E90FF");
